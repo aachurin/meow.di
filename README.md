@@ -4,7 +4,7 @@
 
 <p align="center">
 <a href="https://travis-ci.com/github/aachurin/meow.di">
-    <img src="https://travis-ci.org/aachurin/meow.di.svg?branch=master" alt="Build Status">
+    <img src="https://travis-ci.com/aachurin/meow.di.svg?branch=master" alt="Build Status">
 </a>
 <a href="https://codecov.io/gh/aachurin/meow.di">
     <img src="https://codecov.io/gh/aachurin/meow.di/branch/master/graph/badge.svg" alt="codecov">
