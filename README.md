@@ -1,5 +1,5 @@
 <p align="center">
-    <em>Meow DI</em>
+    <b>Meow DI</b>
 </p>
 
 <p align="center">
