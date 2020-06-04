@@ -1,0 +1,6 @@
+# development
+mypy
+black
+pytest
+pytest-cov
+codecov

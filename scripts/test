@@ -1,0 +1,17 @@
+#!/bin/sh -e
+
+PREFIX=""
+SOURCE="./"
+
+if [[ -n "$1" ]] ; then
+    PREFIX=$1
+fi
+
+if [[ -n "$2" ]] ; then
+    SOURCE=$2
+fi
+
+${PREFIX}pytest \
+    -p no:cacheprovider \
+    --cov ${SOURCE}meow \
+    --cov-report term-missing

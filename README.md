@@ -1,2 +1,1 @@
-# meow.di
-DI
+# Meow Dependency Injection
