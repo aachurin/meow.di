@@ -9,7 +9,7 @@
 <a href="https://codecov.io/gh/aachurin/meow.di">
     <img src="https://codecov.io/gh/aachurin/meow.di/branch/master/graph/badge.svg" alt="codecov">
 </a>
-<!--a href="https://pypi.python.org/pypi/meow.di">
+<a href="https://pypi.python.org/pypi/meow.di">
     <img src="https://badge.fury.io/py/meow.di.svg" alt="Package version">
-</a-->
+</a>
 </p>
