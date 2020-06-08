@@ -11,7 +11,8 @@ if [ -n "$2" ] ; then
     SOURCE=$2
 fi
 
-${PREFIX}pytest \
+${PREFIX}python -m pytest \
+    -s \
     -p no:cacheprovider \
     --cov ${SOURCE}meow \
     --cov-report term-missing
