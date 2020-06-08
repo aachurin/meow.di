@@ -11,4 +11,5 @@
   <circle style="" cx="160" cy="280" r="23"></circle>
   <circle style="" cx="340" cy="280" r="23"></circle>
   <path d="M 624 274 Q 630 265 637 274 L 657 301 Q 663 310 650 310 L 610 310 Q 597 310 604 301 Z" transform="matrix(-1, 0, 0, -1, 880, 600)"></path>
+  <!--path style="stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-width: 16px;" d="M 230 377 L 270 377"></path-->
 </svg>
