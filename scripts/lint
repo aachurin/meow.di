@@ -14,8 +14,7 @@ fi
 
 ${PREFIX}black --check --diff ${SOURCE}
 ${PREFIX}mypy \
+    --config-file=${SOURCE}.mypy.ini \
     --cache-dir=/dev/null \
-    --no-strict-optional \
-    --follow-imports=skip \
-    --namespace-packages \
+    --show-absolute-path \
     ${SOURCE}meow/di

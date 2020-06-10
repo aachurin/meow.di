@@ -29,19 +29,19 @@ from .exception import InjectorError
 class Component:
     is_singleton: bool = False
 
-    def __init_subclass__(cls, singleton: bool = None):
+    def __init_subclass__(cls, singleton: typing.Optional[bool] = None):
         super().__init_subclass__()
         if singleton is not None:
             assert isinstance(singleton, bool)
             cls.is_singleton = singleton
 
-    def identity(self, parameter: inspect.Parameter):
+    def identity(self, parameter: inspect.Parameter) -> str:
         """
         Each component needs a unique identifier string that we use for lookups
         from the `state` dictionary when we run the dependency injection.
         """
-        parameter_name = parameter.name.lower()
-        annotation_name = parameter.annotation.__name__.lower()
+        parameter_name: str = parameter.name.lower()
+        annotation_name: str = parameter.annotation.__name__.lower()
 
         # If `resolve_parameter` includes `Parameter` then we use an identifier
         # that is additionally parameterized by the parameter name.
@@ -52,7 +52,7 @@ class Component:
         # Standard case is to use the class name, lowercased.
         return annotation_name
 
-    def can_handle_parameter(self, parameter: inspect.Parameter):
+    def can_handle_parameter(self, parameter: inspect.Parameter) -> bool:
         """
         Return `True` if this component can handle the given parameter.
 
