@@ -25,7 +25,7 @@ from .exception import InjectorError
 from .injector import Injector
 
 
-__version__ = "1.0"
+__version__ = "1.1"
 
 
 __all__ = ("InjectorError", "Component", "Injector", "ReturnValue")
