@@ -34,6 +34,7 @@ setup(
     maintainer="Andrey Churin",
     maintainer_email="aachurin@gmail.com",
     packages=find_namespace_packages(include=["meow.*"]),
+    package_data={"meow.di": ["py.typed"]},
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Environment :: Web Environment",
