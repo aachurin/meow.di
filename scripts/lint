@@ -17,4 +17,4 @@ ${PREFIX}mypy \
     --config-file=${SOURCE}.mypy.ini \
     --cache-dir=/dev/null \
     --show-absolute-path \
-    ${SOURCE}
+    ${SOURCE}/meow
