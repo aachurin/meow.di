@@ -40,12 +40,12 @@ class Injector:
     def __init__(
         self,
         components: typing.Sequence[Component],
-        initial: typing.Optional[typing.Mapping[str, typing.Type[object]]] = None,
+        initial: typing.Optional[typing.Mapping[str, object]] = None,
         resolved: typing.Optional[typing.Mapping[object, object]] = None,
     ):
         self.components: typing.Sequence[Component] = list(components)
-        self.initial: typing.Mapping[str, typing.Type[object]] = dict(initial or {})
-        self.reverse_initial: typing.Mapping[typing.Type[object], str] = {
+        self.initial: typing.Mapping[str, object] = dict(initial or {})
+        self.reverse_initial: typing.Mapping[object, str] = {
             val: key for key, val in self.initial.items()
         }
         self.resolved: typing.Dict[object, object] = dict(resolved or {})
