@@ -27,10 +27,7 @@ from .component import Component, ReturnValue
 from .exception import InjectorError
 
 
-class _Callable(typing.Protocol):
-    def __call__(self, **kwargs: object) -> object:  # pragma: nocover
-        ...
-
+_Callable = typing.Callable[..., typing.Any]
 
 _Step = typing.Tuple[
     _Callable, bool, typing.Dict[str, str], typing.Dict[str, object], str, bool
@@ -245,7 +242,7 @@ class AsyncInjector(Injector):  # pragma: nocover
             func_kwargs.update(consts)
             if is_async:
                 # noinspection PyUnresolvedReferences
-                state[output_name] = await func(**func_kwargs)  # type: ignore
+                state[output_name] = await func(**func_kwargs)
             else:
                 state[output_name] = func(**func_kwargs)
             if set_return:
